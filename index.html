@@ -6,7 +6,7 @@ Requirements
 [  ] Customized HTML Page #4
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
+[ yes ] Feature 1 - Google Font
 [ no ] Feature 2 - Include jQuery
 [ no ] Feature 3 - Embed Code from Spotify/Google Docs/YouTube
 [ no ] Feature 4 - Customized HTML Page #5
@@ -17,15 +17,20 @@ Select ONE Additional Feature to Add
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Portfolio Project</title>
+    <title>Top Animated Movies</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
     <style>
       /* Styling Only Related To THIS Page */
       /*~~~~~ Taken From:
       https://www.w3schools.com/howto/howto_css_parallax.asp*/
       .parallax {
         /* The image used */
-        background-image: url("CS_Ed_Week_2025.jpg");
+        background-image: url("https://i0.wp.com/nexuspointnews.com/wp-content/uploads/2026/01/image-14.png?fit=920%2C483&ssl=1");
 
         /* Set a specific height */
         min-height: 500px;
@@ -38,31 +43,29 @@ Select ONE Additional Feature to Add
       }
       .textblock {
         min-height: 500px;
-        background-color: black;
-        color: white;
+        background-color: #9B0F06;
+        color: #744577;
       }
       .parent-flex {
         display: flex;
       }
       .child-flex {
-        background-color: green;
+        background-color: #F77F00;
         margin: 30px;
         padding: 10px;
         text-align: justify;
       }
-      .para-1{
-        display: flex;
-        align-items: center;
-      }
+      
+  
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
+      <li><a href="aboutme.html">Coraline</a></li>
+      <li><a href="art.html">Big Hero 6</a></li>
+      <li><a href="resume.html">Megamind</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -80,30 +83,24 @@ Select ONE Additional Feature to Add
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2025-2026</h1>
+    <h1>Top Animated Movies</h1>
     <div class="parallax"></div>
 
     <div class="textblock parent-flex">
-      <div class="child-flex para-1">
+      <div class="child-flex">
+        <h2> Fantastic Mr. Fox</h2>
+        <h3>Runner up # 1</h3>
+        <img src="https://images.squarespace-cdn.com/content/v1/608d9ef497633c6b6eb71caf/1620594410367-AGKP1QQJQZ8NZ3X2SBOL/fantastic_mr_fox.jpeg"style="width: 200px">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          Fantastic Mr. Fox tells the story of a clever fox who regularly steals food from three mean, greedy farmers named Boggis, Bunce, and Bean. Outraged by the thefts, the trio joins forces to hunt Mr. Fox down, shooting off his tail and using heavy machinery to dig up his underground home. To save his family and the neighboring animals from starvation, Mr. Fox organizes a brilliant counter-strategy by digging tunnels directly into the farmers' secret food stores. While the oblivious farmers wait indefinitely above ground to trap the fox, the animals celebrate their victory with a massive subterranean feast.
         </p>
       </div>
       <div class="child-flex">
+        <h2>Mr. Peabody & Sherman</h2>
+          <h3>Runner up # 2</h3>
+          <img src="https://www.alternateending.com/wp-content/uploads/2019/12/hpIUiHIyNKWsid3Tz4adtYsUqo1.jpg"style="width: 200px">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          Mr. Peabody & Sherman is a 2014 animated science-fiction comedy following Mr. Peabody, the world's smartest talking dog, and his adopted human son, Sherman, who use a time machine called the WABAC to visit history firsthand. The plot escalates when Sherman tries to impress his classmate Penny by taking her on an unauthorized time-travel joyride, only to accidentally strand her in Ancient Egypt. As Mr. Peabody and Sherman launch a multi-era rescue mission through Renaissance Italy and the Trojan War, their actions accidentally rip a hole in the space-time continuum. With historical figures raining down into the modern world, the duo must work together to repair the timeline, fix the past, and save the future.
         </p>
       </div>
     </div>

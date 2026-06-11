@@ -2,19 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Project - Resume</title>
+    <title>Final Project - About Me</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
+
+      .parallax {
+        /* The image used */
+        background-image: url("https://imageservice.disco.peacocktv.com/uuid/e35c3058-8e4f-3baf-aa04-a45c71a88762/LAND_16_9?language=eng&proposition=NBCUOTT&version=b63fc002-a97a-3852-9324-8ed2ab7cbcd3");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      .parent-flex {
+        display: flex;
+        background-color: #1A3263;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+      }
+
+      .parent-flex img {
+        width: 150px;
+        padding: 20px;
+      }
+      .child-flex p {
+        background-color: #FFC570;
+        padding: 20px;
+        margin: 20px;
+      }
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a class="active" href="resume.html">Resume</a></li>
+      <li><a href="aboutme.html">Coraline</a></li>
+      <li><a href="art.html">Big Hero 6</a></li>
+      <li><a class="active" href="resume.html">Megamind</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -32,5 +64,30 @@
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>Resume</h1>
+    <div class="parallax"></div>
+    <div class="parent-flex">
+      <div class="child-flex">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzIsNcSNBdeQqhieyaOojMFWXvVL1Um9x-aQ&s"style="width: 200px"
+        />
+      </div>
+      <div class="child-flex">
+        <p>
+          Megamind is a clever animated comedy that flips the classic superhero dynamic on its head. The story follows a brilliant alien supervillain who finally defeats his lifelong nemesis, the heroic Metro Man. Instead of finding happiness in his victory, he sinks into a deep depression because his life lacks purpose without an adversary. To fix this, he creates a new superhero opponent named Tighten, but the plan backfires when Tighten chooses to become a villain instead. Forced into an unfamiliar role, Megamind must step up to become the unlikely hero and save Metro City from his own creation.
+        </p>
+      </div>
+    </div>
+    <div class="parent-flex">
+      <div class="child-flex">
+        <p>
+          Megamind subverts classic superhero conventions by focusing on a villain who accidentally kills his nemesis and experiences an existential crisis as a result. Instead of celebrating victory, the protagonist suffers from a lack of purpose, highlighting the trope that a villain is nothing without their heroic counterpart. The film flips traditional dynamics by making the replacement hero, Titan, selfish and malicious, while the blue villain learns empathy, responsibility, and genuine heroism. Ultimately, it rejects the "destined for evil" narrative, proving that identity is shaped by personal choices rather than societal expectations or origin stories.
+        </p>
+      </div>
+      <div class="child-flex">
+        <img
+          src="https://i.redd.it/fcjkrcbh8mie1.jpeg"style="width: 200px"
+        />
+      </div>
+    </div>
   </body>
 </html>

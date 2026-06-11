@@ -2,23 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Project - Art</title>
+    <title>Final Project - About Me</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
+      
+
+      .parallax {
+        /* The image used */
+        background-image: url("https://wallpapers.com/images/hd/big-hero-6-baymax-petting-mochi-ybs32ezftmtu5but.jpg");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
       .parent-flex {
         display: flex;
-        background-color: purple;
+        background-color: #91C6BC;
+        align-items: center;
         justify-content: space-around;
-        padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
       }
 
-      img {
-        max-width: 30%;
-        border-radius: 10px;
-        object-fit: contain;
-        background-color: white;
+      .parent-flex img {
+        width: 150px;
+        padding: 20px;
+      }
+      .child-flex p {
+        background-color:#F4AE52;
+        padding: 20px;
+        margin: 20px;
       }
     </style>
   </head>
@@ -26,9 +45,9 @@
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a class="active" href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
+      <li><a href="aboutme.html">Coraline</a></li>
+      <li><a class="active" href="art.html">Big Hero 6</a></li>
+      <li><a href="resume.html">Megamind</a></li>
       <li style="float: right">
         <a target="_blank" href=""
           ><img
@@ -45,24 +64,31 @@
       </li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
-
+    <h1>Big Hero 6</h1>
+     <div class="parallax"></div>
     <div class="parent-flex">
-      <img
-        src="images/HeartIcons.jpeg"
-      />
-      <img
-        src="images/VibeyTunes.png"
-      />
+      <div class="child-flex">
+        <img
+          src="https://i.pinimg.com/736x/89/59/c4/8959c4e6248b7f5d8dd1f78af38a9b7f.jpg"style="width: 200px"
+        />
+      </div>
+      <div class="child-flex">
+        <p>
+          In the futuristic city of San Fransokyo, Big Hero 6 follows fourteen-year-old robotics prodigy Hiro Hamada, who spends his time wasting his potential in illegal bot fights. After his older brother Tadashi tragically dies in a mysterious university fire, Hiro finds comfort in Baymax, a cuddly, inflatable healthcare companion robot that Tadashi created. When Hiro discovers that the fire was actually an intentional attack orchestrated by a masked supervillain who stole his own revolutionary microbot technology, he sets out to uncover the truth. To stop the villain and save the city, Hiro upgrades Baymax with armor and forms an unlikely team of high-tech heroes alongside Tadashi’s brilliant college friends: Go Go Tomago, Wasabi, Honey Lemon, and Fred.
+        </p>
+      </div>
     </div>
-
     <div class="parent-flex">
-      <img
-        src="images/VibeyTunes.png"
-      />
-      <img
-        src="images/HeartIcons.jpeg"
-      />
+      <div class="child-flex">
+        <p>
+          Big Hero 6 is exceptionally special because it seamlessly blends a vibrant, sci-fi superhero aesthetic with a profound, emotionally sophisticated core. It celebrates STEM and intellectual innovation, empowering a diverse team of tech geeks whose only "superpowers" are their own scientific inventions. The film masterfully grounds its high-flying superhero action in a realistic, heartwarming exploration of grief, healing, and unconventional family bonds. Ultimately, the movie's true magic lies in the deeply moving relationship between the young prodigy Hiro and the lovable, inflatable healthcare robot Baymax, a dynamic that delivers poignant life lessons on empathy and moving past loss.
+        </p>
+      </div>
+      <div class="child-flex">
+        <img
+          src="https://r1.ilikewallpaper.net/iphone-12-pro-max-wallpapers/download-110761/Big-Hero-6-5k-Sony-Xperia-X-XZ-Z5-Premium-HD-4k-Im.jpg"style="width: 200px"
+        />
+      </div>
     </div>
   </body>
 </html>
